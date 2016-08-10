@@ -1,9 +1,9 @@
 # Site settings
-title: Diagram Repository
+title: V&R's 11 Year Anniversary
 email: "robbie.cao@gmail.com"
-description: "Diagram Journal"
-url: "http://robbie-cao.github.io"
-baseurl: "/repo-diagrams"
+description: "The Only Present Love Demands is Love"
+url: 
+baseurl: "/xiya"
 facebook_username: "cao.robbie"
 twitter_username: "robbie_cao"
 instagram_username: "robbie_cao"
@@ -18,7 +18,7 @@ owner:
   name:   robbie-cao
   avatar: avatar.png
   favicon: favicon.ico
-  info: Diagram Repository
+  info: V&R's 11 Year Anniversary
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "http://robbie-cao.github.io/repo-diagrams/gallery/"  
-  - JOURNAL: "http://robbie-cao.github.io/repo-diagrams/journal/"
-  - ABOUT: "http://robbie-cao.github.io/repo-diagrams/about/"
+  - GALLERY: "http://robbie-cao.github.io/xiya/gallery/"  
+  - JOURNAL: "http://robbie-cao.github.io/xiya/journal/"
+  - ABOUT: "http://robbie-cao.github.io/xiya/about/"
 
 # All translation keys
 translations:
