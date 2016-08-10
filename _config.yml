@@ -1,5 +1,5 @@
 # Site settings
-title               : V&R's 11 Year Anniversary
+title               : V&R's Love
 email               : "robbie.cao@gmail.com"
 description         : "The Only Present Love Demands is Love"
 url                 : ""
@@ -18,7 +18,7 @@ owner:
   name    : robbie-cao
   avatar  : avatar.png
   favicon : favicon.ico
-  info    : V&R's 11 Year Anniversary
+  info    : V&R's Love
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
