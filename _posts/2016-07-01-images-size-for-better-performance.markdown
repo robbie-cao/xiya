@@ -6,7 +6,7 @@ active: "journal"
 image:
   feature: "pc008.jpg"
 date: "2016-02-01"
-header-img: "img/postcover/pc008.jpg"
+header-img: "images/postcover/pc008.jpg"
 comments: "true"
 ---
 
