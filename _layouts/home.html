@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-{% include head.html %}
-<link rel="shortcut icon" href="{{ root_url }}/favicon.ico?" type="image/x-icon">
-<link rel="icon" href="{{ root_url }}/favicon.ico?" type="image/x-icon">
-</head>
+    <head>
+        {% include head.html %}
+        <link rel="shortcut icon" href="{{ root_url }}/favicon.ico?" type="image/x-icon">
+        <link rel="icon" href="{{ root_url }}/favicon.ico?" type="image/x-icon">
+    </head>
 
-<body>
+    <body>
 
+        {% include nav.html %}
 
-    {% include nav.html %}
-
-    {{ content }}
+        {{ content }}
 
     </body>
 

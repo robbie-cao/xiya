@@ -12,7 +12,7 @@ header-img: "images/misc-bg.jpg"
             {% if forloop.first %}
                 <h3>{{ post_year }}</h3><div class="list-group"style="display: inline-block;">
             {% endif %}
-			
+
             {% if forloop.first == false %}
                 {% assign previous_index = forloop.index0 | minus: 1 %}
                 {% capture previous_post_year %}{{ site.tags[page.tag][previous_index].date | date: '%Y' }}{% endcapture %}
@@ -20,7 +20,7 @@ header-img: "images/misc-bg.jpg"
                     </div><h3>{{ post_year }}</h3><div class="category-list" >
                 {% endif %}
             {% endif %}
-			
+
             <a href="{{ site.baseurl }}{{ post.url }}">
                 <h4>{{ post.title }}</h4>
             </a>
