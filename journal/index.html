@@ -3,7 +3,7 @@ layout: page
 description: "Journal"
 title: "Writings"
 active: journal
-header-img: "img/writing-bg.jpg"
+header-img: "images/writing-bg.jpg"
 ---
 
 <head>
@@ -29,25 +29,25 @@ header-img: "img/writing-bg.jpg"
 
  {% assign post = site.posts.first %}
   {% assign content = post.content %}
-  
+
 <li class="block">
 <div class="postArticle-wrapper">
 
 <div class="post-preview" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #530720;">
-    
+
 <a href="{{ post.url | prepend: site.baseurl }}">
         {% if post.image.feature %}
-	<img src="{{ site.baseurl }}/img/postcover/{{ post.image.feature }}">
+	<img src="{{ site.baseurl }}/images/postcover/{{ post.image.feature }}">
 	{% endif %}
- 
- 
+
+
         <p class="post-title" style="font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 16px; margin-left: 1em;"> &#9658; {{ post.title }}
         </p>
 </a>
         {% if post.subtitle %}
         <p class="post-subtitle" style="font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 12px; margin-left: 1em;"> {{ post.subtitle }}</p>
         {% endif %}
-    
+
     <p class="post-meta" style="font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 10px; margin-left: 1em;"> Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
 
