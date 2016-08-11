@@ -33,9 +33,15 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY      : "gallery"
-  - JOURNAL      : "journal"
-  - ABOUT        : "about"
+  - ENCOUNTER    : "encounter"
+  - RELATIONSHIP : "relationship"
+  - WEDDING      : "wedding"
+  - JOURNEY      : "journey"
+  - KIDS         : "kids"
+  - FOREVER      : "forever"
+# - GALLERY      : "gallery"
+# - JOURNAL      : "journal"
+# - ABOUT        : "about"
 
 # All translation keys
 translations:
