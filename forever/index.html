@@ -1,0 +1,228 @@
+---
+layout: home
+main-title: "VERA&#x2764;ROBBIE"
+subtitle: "11 Year Anniversary"
+description: "If I know what love is, it is because of you ..."
+images:
+
+  - image_path: /gallery/albums/alb01.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb02.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb03.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb04.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb05.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb06.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb07.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb08.jpg
+    gallery-folder: /gallery/albums/
+  - image_path: /gallery/albums/alb09.jpg
+    gallery-folder: /gallery/albums/
+
+  - image_path: /gallery/archive/g01/bg1.jpg
+    gallery-folder: /gallery/archive/g01/
+  - image_path: /gallery/archive/g01/bg2.jpg
+    gallery-folder: /gallery/archive/g01/
+  - image_path: /gallery/archive/g01/bg3.jpg
+    gallery-folder: /gallery/archive/g01/
+  - image_path: /gallery/archive/g02/bg1.jpg
+    gallery-folder: /gallery/archive/g02/
+  - image_path: /gallery/archive/g02/bg2.jpg
+    gallery-folder: /gallery/archive/g02/
+  - image_path: /gallery/archive/g02/bg3.jpg
+    gallery-folder: /gallery/archive/g02/
+  - image_path: /gallery/archive/g03/bg1.jpg
+    gallery-folder: /gallery/archive/g03/
+  - image_path: /gallery/archive/g03/bg2.jpg
+    gallery-folder: /gallery/archive/g03/
+  - image_path: /gallery/archive/g03/bg3.jpg
+    gallery-folder: /gallery/archive/g03/
+  - image_path: /gallery/archive/g04/bg1.jpg
+    gallery-folder: /gallery/archive/g04/
+  - image_path: /gallery/archive/g04/bg2.jpg
+    gallery-folder: /gallery/archive/g04/
+  - image_path: /gallery/archive/g04/bg3.jpg
+    gallery-folder: /gallery/archive/g04/
+  - image_path: /gallery/archive/g05/bg1.jpg
+    gallery-folder: /gallery/archive/g05/
+  - image_path: /gallery/archive/g05/bg2.jpg
+    gallery-folder: /gallery/archive/g05/
+  - image_path: /gallery/archive/g05/bg3.jpg
+    gallery-folder: /gallery/archive/g05/
+  - image_path: /gallery/archive/g06/bg1.jpg
+    gallery-folder: /gallery/archive/g06/
+  - image_path: /gallery/archive/g06/bg2.jpg
+    gallery-folder: /gallery/archive/g06/
+  - image_path: /gallery/archive/g06/bg3.jpg
+    gallery-folder: /gallery/archive/g06/
+  - image_path: /gallery/archive/g07/bg1.jpg
+    gallery-folder: /gallery/archive/g07/
+  - image_path: /gallery/archive/g07/bg2.jpg
+    gallery-folder: /gallery/archive/g07/
+  - image_path: /gallery/archive/g07/bg3.jpg
+    gallery-folder: /gallery/archive/g07/
+  - image_path: /gallery/archive/g08/bg1.jpg
+    gallery-folder: /gallery/archive/g08/
+  - image_path: /gallery/archive/g08/bg2.jpg
+    gallery-folder: /gallery/archive/g08/
+  - image_path: /gallery/archive/g08/bg3.jpg
+    gallery-folder: /gallery/archive/g08/
+  - image_path: /gallery/archive/g09/bg1.jpg
+    gallery-folder: /gallery/archive/g09/
+  - image_path: /gallery/archive/g09/bg2.jpg
+    gallery-folder: /gallery/archive/g09/
+  - image_path: /gallery/archive/g09/bg3.jpg
+    gallery-folder: /gallery/archive/g09/
+---
+
+
+<html class="no-js" lang="en">
+    <head>
+        <meta content="charset=utf-8">
+
+        <!-- CSS -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/galleries.css" media="screen" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" />
+
+        <!-- Modernizr -->
+        <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    </head>
+
+    <body class="fullscreen">
+
+        <!-- MAIN CONTENT SECTION  _____________________________________________-->
+        <section id="content" role="main">
+            <div class="wrapper">
+
+                <!-- WYSIWYG -->
+
+                <div class="position-absolute">
+                    <h2 class="big no-margin"><strong>{{ page.main-title }}</strong></h2>
+                    <h2>{{ page.subtitle }}</h2>
+                    <div class="entry-summary">
+                        <p>{{ page.description }}</p>
+                    </div><br />
+                </div>
+
+                <div class="gallery fullscreen-gallery kenburns-gallery">
+
+                    <canvas id="kenburns"></canvas>
+
+                    {% for image in page.images %}
+
+                    <figure class="gallery-item">
+                        <header class='gallery-icon'>
+
+                            <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+                                <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}">
+                            </a>
+
+                        </header>
+                    </figure>
+
+                    {% endfor %}
+
+                </div>
+                <!-- END WYSIWYG -->
+
+            </div><!-- END .wrapper -->
+
+        </section>
+
+<!--
+        <div id="footer" role="contentinfo">
+            <ul class="soc-icons">
+
+                {% if site.facebook_username %}
+                <li>
+                    <a href="https://facebook.com/{{ site.facebook_username }}" style="
+                    color:#dddddd; target="_blank" title="Facebook">
+                        <i class="fa fa-facebook"></i>
+                        </span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.twitter_username %}
+                <li>
+                    <a href="https://twitter.com/{{ site.twitter_username }}" style="color:#dddddd; target="_blank" title="Twitter">
+                        <i class="fa fa-twitter"></i>
+                        </span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.instagram_username %}
+                <li>
+                    <a href="https://instagram.com/{{ site.instagram_username }}" style="
+                    color:#dddddd; target="_blank" title="Instagram">
+                        <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.flickr_username %}
+                <li>
+                    <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="color:#dddddd; target="_blank" title="Flickr">
+                        <i class="fa fa-flickr"></i>
+                        </span>
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.deviantart_username %}
+                <li>
+                    <a href="http://{{ site.deviantart_username }}.deviantart.com" style="
+                    color:#dddddd; target="_blank" title="DeviantArt">
+                        <i class="fa fa-deviantart"></i> </span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.github_username %}
+                <li>
+                    <a href="https://github.com/{{ site.github_username }}" style="color:#dddddd; target="_blank" title="Github">
+                        <i class="fa fa-github"></i>
+                        </span>
+                    </a>
+                </li>
+                {% endif %}
+
+                <li>
+                    <a href="mailto:{{ site.email }}" style="color:#dddddd; target="_blank" title="Email">
+                        <i class="fa fa-envelope-o"></i></span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+-->
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <script src="{{ site.baseurl }}/js/retina.min.js"></script>
+
+        <!-- include mousewheel plugins -->
+        <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+        <!-- include gallery cycle plugin -->
+        <script src="{{ site.baseurl }}/js/jquery.cycle.min.js"></script>
+        <!-- include kenburns plugins -->
+        <script src="{{ site.baseurl }}/js/kenburns.min.js"></script>
+        <!-- include svg line drawing plugin -->
+        <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+        <!-- include custom script -->
+        <script src="{{ site.baseurl }}/js/scripts.js"></script>
+
+    </body>
+</html>
+
